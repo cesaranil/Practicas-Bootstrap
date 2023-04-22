@@ -1,0 +1,35 @@
+// ===================== HEADER ==================//
+
+header{
+    .nav{
+        min-height: 80px;
+        overflow: hidden;
+        background: #fff;
+    }
+    .logo{
+        h2,p{
+            font-size: 16px;
+            display: inline-block;
+        }
+        .icono{
+            color: #bfbfbf;
+        }
+
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+        p{
+            color: #777777;
+        }
+    }
+    
+    .menu{
+        .c1{background: #3da5e2;
+            &:hover{background: #1ba0ef;}}
+        .c2{background: #005385;
+            &:hover{background: #00426a;}}
+        .c3{background: #003855;
+            &:hover{background: #002d44;}}
+    }
+}
