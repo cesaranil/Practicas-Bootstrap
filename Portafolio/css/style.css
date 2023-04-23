@@ -62,6 +62,11 @@ header .menu .c3:hover {
   display: inline-block;
 }
 
+/* VENTAA MODAL */
+.modal-dialog {
+  max-width: 1000px;
+}
+
 /* MEDIAQUERIES */
 /* Dispositivo sm */
 @media screen and (max-width: 576px) {
