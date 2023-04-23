@@ -1,0 +1,28 @@
+// ===================== MAIN ==================//
+
+// ========= PORTAFOLIO =========//
+
+$colorazul: #3da5e2;
+
+.portafolio{
+    border-top: 5px solid $colorazul;
+    background: #fff;
+    .titulo{
+        color: $colorazul;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+    .galeria{
+        .contenedor-imagen{
+            max-height: 180px;
+            overflow: hidden;
+            &:hover img{
+                opacity: .3;
+            }
+            a{
+                background: $colorazul ;
+                display: inline-block;
+            }
+        }
+    }
+}
