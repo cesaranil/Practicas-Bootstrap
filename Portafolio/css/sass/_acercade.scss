@@ -1,0 +1,45 @@
+$colorimport: #005385;
+
+.acerca-de{
+    .foto{
+        .nombre{
+            color: #545454;
+            font-weight: 300;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .info{
+        .titulo{
+            color: $colorimport;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .resumen{
+            letter-spacing: 1px;
+            text-align: justify;
+        }
+
+        .label{
+            font-size: 18px;
+            font-weight: 600;
+            color: $colorimport;
+            margin-bottom: 10px;
+        }
+
+        .progress{
+            background: $colorimport;
+            border-radius: 0;
+            height: 25px;
+            .progress-bar{
+                background: #3da5e2;
+                line-height: 25px;
+                padding-left: 20px;
+            }
+        }
+    }
+}
