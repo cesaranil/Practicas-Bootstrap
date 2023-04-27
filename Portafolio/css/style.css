@@ -187,4 +187,33 @@ header .menu .c3:hover {
   background: #1ba0ef;
 }
 
+.redes-sociales {
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+.redes-sociales .icono {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background: #cbcbcb;
+  display: inline-block;
+  margin: 0pc 20px;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+.redes-sociales .icono svg {
+  width: 40px;
+  height: 40px;
+}
+.redes-sociales .twitter {
+  background: #00acee;
+}
+.redes-sociales .instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.redes-sociales .facebook {
+  background: #3b5998;
+}
+
 /*# sourceMappingURL=style.css.map */
