@@ -1,0 +1,38 @@
+//============= MEDIA QUERYS ===========//
+
+/* Dispositivos xm */
+@media screen and (max-width: 320px){}
+
+/* Dispositivos sm */
+@media screen and (max-width: 576px){
+    .barra-lateral{
+        min-height: auto;
+    }
+}
+
+/* Dispositivos md */
+@media screen and (max-width: 768px){}
+
+/* Dispositivos lg */
+@media screen and (max-width: 992px){}
+
+/* Dispositivos xl */
+@media screen and (max-width: 1200px){
+    .barra-lateral{
+        min-width: auto;
+        .logo{
+            display: none;
+        }
+        .menu{
+            a{
+                svg{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* Dispositivos xxl */
+@media screen and (max-width: 1400px){}
+
