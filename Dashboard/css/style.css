@@ -47,6 +47,7 @@ a {
   padding-top: 40px;
   /*============= Widget Nueva Entrada ===========*/
   /*============= Widget Estadisticas ===========*/
+  /*============= Widget Comentarios ===========*/
 }
 .main .columna {
   padding: 0 40px;
@@ -121,6 +122,71 @@ a {
 .main .estadisticas .caja:last-child {
   border-left: none;
 }
+.main .comentarios .contenedor {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.main .comentarios .comentario {
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.main .comentarios .comentario .foto {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  margin-right: 20px;
+  border-radius: 100px;
+}
+.main .comentarios .comentario .foto a {
+  display: inline-block;
+}
+.main .comentarios .comentario .foto img {
+  width: 100%;
+  vertical-align: top;
+}
+.main .comentarios .comentario .texto {
+  flex: 1; /*Ya que trabajo con flexbox haciendo esto me permite colocar el texto a la derecha*/
+}
+.main .comentarios .comentario .texto a {
+  text-decoration: none;
+}
+.main .comentarios .comentario .texto .texto-comentario {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+.main .comentarios .comentario .botones button {
+  background: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.main .comentarios .comentario .botones .aprobar {
+  background: #35ae6b;
+}
+.main .comentarios .comentario .botones .aprobar:hover {
+  background: #449d44;
+}
+.main .comentarios .comentario .botones .eliminar {
+  background: #b74848;
+}
+.main .comentarios .comentario .botones .eliminar:hover {
+  background: #c9302c;
+}
+.main .comentarios .comentario .botones .bloquear {
+  color: #acacac;
+}
+.main .comentarios .comentario .botones .bloquear:hover {
+  color: #fff;
+  background: #acacac;
+}
 
 /* Dispositivos xm */
 /* Dispositivos sm */
@@ -130,6 +196,11 @@ a {
   }
 }
 /* Dispositivos md */
+@media screen and (max-width: 768px) {
+  .main .comentarios .comentario .botones button {
+    width: 100%;
+  }
+}
 /* Dispositivos lg */
 /* Dispositivos xl */
 @media screen and (max-width: 1200px) {
@@ -141,6 +212,10 @@ a {
   }
   .barra-lateral .menu a svg {
     display: none;
+  }
+  .main .comentarios .comentario .foto {
+    width: 30px;
+    height: 30px;
   }
 }
 /* Dispositivos xxl */

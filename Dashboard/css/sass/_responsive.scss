@@ -11,7 +11,19 @@
 }
 
 /* Dispositivos md */
-@media screen and (max-width: 768px){}
+@media screen and (max-width: 768px){
+    .main{
+        .comentarios{
+            .comentario{
+                .botones{
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Dispositivos lg */
 @media screen and (max-width: 992px){}
@@ -27,6 +39,16 @@
             a{
                 svg{
                     display: none;
+                }
+            }
+        }
+    }
+    .main{
+        .comentarios{
+            .comentario{
+                .foto{
+                    width: 30px;
+                    height: 30px;
                 }
             }
         }
