@@ -1,0 +1,35 @@
+$fondo-contenido: #242526;
+$blanco: #fff;
+$input: #3a3b3c;
+$texto: rgba(255,255,255, .7);
+/*====================== HEADER ========================*/
+header{
+    background: $fondo-contenido;
+    .logo{
+        display: inline-block;
+        svg{
+            color: $blanco;
+	        height: 35px;
+	        width: 35px;
+        }
+    }
+    .barra-busqueda{
+        position: relative;
+	    width: 100%;
+        input{
+            width: 100%;
+	        border: none;
+	        background: $input;
+	        color: $texto;
+	        height: 40px;
+	        border-radius: 100px;
+	        padding: 0 20px 0 40px;
+        }
+        .icono{
+            position: absolute;
+	        top: 6px;
+	        left: 15px;
+	        color: $texto;
+        }
+    }
+}
