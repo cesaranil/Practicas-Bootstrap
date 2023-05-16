@@ -27,6 +27,8 @@ a {
 /*====================== HEADER ========================*/
 header {
   background: #242526;
+  /*=== Barra de Busqueda y Logo ====*/
+  /*=== Menu ====*/
 }
 header .logo {
   display: inline-block;
@@ -54,6 +56,28 @@ header .barra-busqueda .icono {
   top: 6px;
   left: 15px;
   color: rgba(255, 255, 255, 0.7);
+}
+header .menu a {
+  display: inline-block;
+  padding: 10px 30px;
+}
+header .menu a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background: #3a3b3c;
+  border-radius: 5px;
+}
+header .menu a svg {
+  width: 25px;
+  height: 25px;
+}
+header .menu .active {
+  border-bottom: 4px solid #2d88ff;
+  color: #2d88ff;
+}
+header .menu .active:hover {
+  background: none;
+  border-radius: 0px;
+  color: #2d88ff;
 }
 
 /*# sourceMappingURL=style.css.map */

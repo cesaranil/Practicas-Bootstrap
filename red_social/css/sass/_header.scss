@@ -2,6 +2,7 @@ $fondo-contenido: #242526;
 $blanco: #fff;
 $input: #3a3b3c;
 $texto: rgba(255,255,255, .7);
+$activo: #2d88ff;
 /*====================== HEADER ========================*/
 header{
     background: $fondo-contenido;
@@ -13,6 +14,7 @@ header{
 	        width: 35px;
         }
     }
+    /*=== Barra de Busqueda y Logo ====*/
     .barra-busqueda{
         position: relative;
 	    width: 100%;
@@ -30,6 +32,32 @@ header{
 	        top: 6px;
 	        left: 15px;
 	        color: $texto;
+        }
+    }
+
+    /*=== Menu ====*/
+    .menu{
+        a{
+            display: inline-block;
+            padding: 10px 30px;
+            &:hover{
+                color: $texto;
+                background: $input;
+                border-radius: 5px;                
+            }
+            svg{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .active{
+            border-bottom: 4px solid $activo;
+            color: $activo;
+            &:hover{
+                background: none;
+                border-radius: 0px;
+                color: $activo;                
+            }
         }
     }
 }
