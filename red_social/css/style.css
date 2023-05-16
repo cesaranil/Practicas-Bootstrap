@@ -107,4 +107,21 @@ header .botones .perfil img {
   margin-right: 5px;
 }
 
+/*====================== MEDIAQUERYS ========================*/
+/* Dispositivo LG*/
+@media screen and (max-width: 992px) {
+  header {
+    padding-top: 10px;
+  }
+  .menu {
+    margin-top: 10px;
+  }
+}
+/* Dispositivo XL*/
+@media screen and (max-width: 1200px) {
+  header .menu a {
+    padding: 10px 20px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
