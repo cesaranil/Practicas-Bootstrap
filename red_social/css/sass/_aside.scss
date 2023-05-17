@@ -1,0 +1,38 @@
+$blanco: #fff;
+$input-hover: #4b4d4e;
+/*====================== ASIDE ========================*/
+aside{
+    height: 100vh; /*con el: vh me aseguro que ocupe el 100% de la ventana*/
+    overflow: hidden;
+    padding-top: 10px;    
+}
+/*=== enlaces-rapidos ====*/
+.enlaces-rapidos{
+    >nav{
+        a{
+            display: flex;
+            align-items: center;
+            color: $blanco;
+            padding: 10px 10px;
+            border-radius: 3px;
+            &:hover{
+                background: $input-hover;
+            }
+        }
+    }
+    .perfil{
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            margin-right: 10px;
+        }
+    }
+    .icono{
+        margin-right: 10px;
+        svg{
+            height: 20px;
+            width: 20px;
+        }
+    }
+}

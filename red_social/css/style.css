@@ -107,7 +107,59 @@ header .botones .perfil img {
   margin-right: 5px;
 }
 
+/*====================== ASIDE ========================*/
+aside {
+  height: 100vh; /*con el: vh me aseguro que ocupe el 100% de la ventana*/
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+/*=== enlaces-rapidos ====*/
+.enlaces-rapidos > nav a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 3px;
+}
+.enlaces-rapidos > nav a:hover {
+  background: #4b4d4e;
+}
+.enlaces-rapidos .perfil img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+.enlaces-rapidos .icono {
+  margin-right: 10px;
+}
+.enlaces-rapidos .icono svg {
+  height: 20px;
+  width: 20px;
+}
+
+/*====================== FOOTER ========================*/
+footer {
+  margin: 40px 0;
+}
+footer nav a {
+  font-size: 14px;
+  margin-right: 7px;
+  color: #b0b3b8;
+}
+footer nav a:hover {
+  text-decoration: underline;
+  color: #b0b3b8;
+}
+
 /*====================== MEDIAQUERYS ========================*/
+/* Dispositivo MD*/
+@media screen and (max-width: 768px) {
+  .enlaces-rapidos {
+    display: none;
+  }
+}
 /* Dispositivo LG*/
 @media screen and (max-width: 992px) {
   header {
@@ -115,6 +167,9 @@ header .botones .perfil img {
   }
   .menu {
     margin-top: 10px;
+  }
+  aside {
+    padding-top: 10px;
   }
 }
 /* Dispositivo XL*/

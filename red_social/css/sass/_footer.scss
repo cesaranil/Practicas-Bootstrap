@@ -1,0 +1,16 @@
+$gris-claro: #b0b3b8;
+/*====================== FOOTER ========================*/
+footer{
+    margin: 40px 0;
+    nav{
+        a{
+            font-size: 14px;
+            margin-right: 7px;
+            color: $gris-claro; 
+            &:hover{
+                text-decoration: underline;
+                color: $gris-claro;
+            }           
+        }
+    }
+}
