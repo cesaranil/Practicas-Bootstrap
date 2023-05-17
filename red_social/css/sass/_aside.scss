@@ -3,7 +3,7 @@ $input-hover: #4b4d4e;
 /*====================== ASIDE ========================*/
 aside{
     height: 100vh; /*con el: vh me aseguro que ocupe el 100% de la ventana*/
-    overflow: hidden;
+    overflow: auto;
     padding-top: 10px;    
 }
 /*=== enlaces-rapidos ====*/

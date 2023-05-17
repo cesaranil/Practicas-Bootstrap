@@ -110,7 +110,7 @@ header .botones .perfil img {
 /*====================== ASIDE ========================*/
 aside {
   height: 100vh; /*con el: vh me aseguro que ocupe el 100% de la ventana*/
-  overflow: hidden;
+  overflow: auto;
   padding-top: 10px;
 }
 
@@ -153,10 +153,47 @@ footer nav a:hover {
   color: #b0b3b8;
 }
 
+/*=== Contactos ====*/
+.contactos .seccion {
+  margin-bottom: 10px;
+}
+.contactos .titulo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b0b3b8;
+  margin-bottom: 10px;
+}
+.contactos .publicidad {
+  display: block;
+  max-height: 100px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.contactos .publicidad img {
+  width: 100%;
+}
+.contactos nav a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.contactos nav a:hover {
+  background: #4b4d4e;
+}
+.contactos nav img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
 /*====================== MEDIAQUERYS ========================*/
 /* Dispositivo MD*/
 @media screen and (max-width: 768px) {
-  .enlaces-rapidos {
+  .enlaces-rapidos, .contactos {
     display: none;
   }
 }
