@@ -1,0 +1,57 @@
+$fondo-contenido: #242526;
+$texto: rgba(255,255,255, .7);
+$input: #3a3b3c;
+$input-hover: #4b4d4e;
+/*====================== MAIN ========================*/
+main{
+    padding-top: 10px;
+    .publicar{
+        background: $fondo-contenido;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 10px;
+        .formulario{
+            display: flex;
+            justify-self: start;
+        }
+        input{
+            width: 100%;
+            border: none;
+            background: $input;
+            height: 40px;
+            border-radius: 100px;
+            padding: 0 20px;
+            color: $texto;
+        }
+        .botones{
+            a{
+                display: inline-flex; /* sirve para que un elemento este al lado del otro y poder trabajar con flexbox */
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 10px;
+                border-radius: 3px;
+                font-size: 13px;
+                &:hover{
+                    background: $input-hover;
+                    color: $texto;
+                }
+                svg{
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .foto{
+        display: block; /*lo coloco para poder modificar el alto y el ancho*/
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 100px;
+        margin-right: 10px;
+        img{
+            width: 100%;
+        }
+    }
+}

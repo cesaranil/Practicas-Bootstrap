@@ -190,6 +190,58 @@ footer nav a:hover {
   margin-right: 10px;
 }
 
+/*====================== MAIN ========================*/
+main {
+  padding-top: 10px;
+}
+main .publicar {
+  background: #242526;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+main .publicar .formulario {
+  display: flex;
+  justify-self: start;
+}
+main .publicar input {
+  width: 100%;
+  border: none;
+  background: #3a3b3c;
+  height: 40px;
+  border-radius: 100px;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+main .publicar .botones a {
+  display: inline-flex; /* sirve para que un elemento este al lado del otro y poder trabajar con flexbox */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+main .publicar .botones a:hover {
+  background: #4b4d4e;
+  color: rgba(255, 255, 255, 0.7);
+}
+main .publicar .botones a svg {
+  margin-right: 5px;
+}
+main .foto {
+  display: block; /*lo coloco para poder modificar el alto y el ancho*/
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+main .foto img {
+  width: 100%;
+}
+
 /*====================== MEDIAQUERYS ========================*/
 /* Dispositivo MD*/
 @media screen and (max-width: 768px) {
