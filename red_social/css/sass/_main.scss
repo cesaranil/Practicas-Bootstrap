@@ -2,10 +2,11 @@ $fondo-contenido: #242526;
 $texto: rgba(255,255,255, .7);
 $input: #3a3b3c;
 $input-hover: #4b4d4e;
+$blanco: #fff;
 /*====================== MAIN ========================*/
 main{
     padding-top: 10px;
-    .publicar{
+    .publicar,.publicacion{
         background: $fondo-contenido;
         width: 100%;
         border-radius: 5px;
@@ -42,6 +43,78 @@ main{
                 }
             }
         }
+    }
+    /*======== Publicacion ========*/
+    .publicacion{
+        .header{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            .datos{
+                a{
+                    &:hover{
+                        color: $texto;
+                        text-decoration: underline;
+                    }
+                }
+                display: flex;
+                flex-direction: column;
+                .nombre{
+                    color: $blanco;
+                }
+                .hora{
+                    color: $texto;
+                    font-size: 14px;
+                    &:hover{
+                        color: $texto;
+                    }
+                }
+            }
+        }
+        .body{
+            p{
+                margin-bottom: 10px;
+                color: $blanco;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .comentarios{
+            padding: 10px;
+            .me-gusta{
+                svg{
+                    margin-right: 10px;
+                    color: #e75151;
+                }
+            }
+            a,.me-gusta{
+                color: $texto;
+            }
+            a{
+                &:hover{
+                    text-decoration: underline;
+                    color: $texto;
+                }
+            }
+        }
+        .botones{
+            button{
+                width: 100%;
+                border: none;
+                background: none;
+                color: $texto;
+                padding: 10px;
+                border-radius: 3px;
+                &:hover{
+                    background: #3a3b3c;
+                }
+                svg{
+                    margin-right: 5px;
+                }
+            }
+        }
+        
     }
     .foto{
         display: block; /*lo coloco para poder modificar el alto y el ancho*/
